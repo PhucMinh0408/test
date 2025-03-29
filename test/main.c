@@ -4,16 +4,14 @@
 #include "toan.h"
 
 int main() {
-	printf("Hay nhap so can tinh tong: ");
-	int d;
-	scanf_s("%d", &d);
-	printf("\n");
-	printf("Hay nhap so can tinh giai thua: ");
-	int b;
-	scanf_s("%d", &b);
-	printf("\n");
-	int c = giaithua(b);
-	int a = sum(d);
-	printf("%d\n", a);
-	printf("%d", c);
+	printf("nhap vao so cua bang cuu chuong: ");
+	int a;
+	int c;
+	scanf_s("%d", &a);
+	int b = 10;
+	for (int i = 1; i <= b; i++) {
+		c = a * i;
+		printf(" %d * %d = % d\n", a, i, c);
+	}
+	
 }
